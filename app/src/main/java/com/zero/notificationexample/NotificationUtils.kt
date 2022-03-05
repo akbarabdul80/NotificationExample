@@ -69,9 +69,6 @@ object NotificationUtils {
         builder.setContentTitle("You've been notified")
         builder.setContentText("Open Github!")
         builder.setSmallIcon(R.drawable.ic_notification)
-        // Diganti jadi PRIORITY_DEFAULT, kenapa?
-        // Karena kalo tetap PRIORITY_HIGH semisal ada notif lain, nanti akan membuat notif baru lagi
-        // kalau jadi PRIORITY_DEFAULT, nanti hanya notif yang sudah ada yang akan diubah
         builder.priority = NotificationCompat.PRIORITY_HIGH
         val mascotBitmap = BitmapFactory.decodeResource(context.resources, R.drawable.img_logo)
         builder.setStyle(
